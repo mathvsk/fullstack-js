@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.js"></script>
+
+</head>
+<body class="bg-zinc-800 grid place-items-center">
+  <main class=" bg-white rounded-lg p-5 w-[90%] m-10 shadow-slate-600">
+    <form class="flex mb-12 gap-4 w-full add-form" action="">
+      <input class="w-full p-4 border border-solid rounded-md outline-none text-base font-bold input-task" type="text" placeholder="Adicionar tarefa">
+      <div class="">
+        <button class="bg-zinc-900 h-full w-12 rounded text-white text-2xl font-medium flex justify-center items-center cursor-pointer hover:opacity-90 ease-in duration-300" type="submit">+</button>
+      </div>
+    </form>
+
+    <table class="border-collapse w-full">
+      <thead>
+        <tr>
+          <th class="p-4 border text-center">Tarefa</th>
+          <th class="p-4 border text-center">Criada em</th>
+          <th class="p-4 border text-center">Status</th>
+          <th class="p-4 border text-center">Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- <tr class="even:bg-gray-100">
+          <td class="p-4 border text-center">titulo</td>
+          <td class="p-4 border text-center">criado em</td>
+          <td class="p-4 border text-center">
+            <select class="w-full p-2 rounded-lg font-semibold capitalize bg-zinc-100 hover:bg-zinc-200 ease-in duration-300" name="" id="">
+              <option value="pendente">pendente</option>
+              <option value="em andamento">em andamento</option>
+              <option value="concluída">concluída</option>
+            </select>
+          </td>
+          <td class="p-4 border text-center">
+            <buttton class="rounded p-1 text-white inline-flex items-center justify-center cursor-pointer bg-blue-300">
+              <span class="material-symbols-outlined">
+                edit
+              </span>
+            </buttton>
+            <buttton class="rounded p-1 text-white inline-flex items-center justify-center cursor-pointer bg-red-500">
+              <span class="material-symbols-outlined">
+                delete
+              </span>
+            </buttton>
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
